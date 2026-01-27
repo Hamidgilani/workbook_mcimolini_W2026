@@ -18,4 +18,12 @@ if variable == 1:
 # Your code will run, but it will likely crash at some point
 number = 4
 # NameError: name 'nummber' is not defined. Did you mean: 'number'?
-print(f"My number is {nummber}")
+print(f"My number is {number}")
+
+# TypeError - This is when we mix incompatable variable types in an operation 
+# eg. Adding a string and an int
+
+num_string = "4"
+# TypeError: can only concatenate str (not "int") to str
+# Error comment after the : will be specific to what Python thinks you're trying to do.
+print(f"{num_string + number}") # num_string is a str and number is an int so this won't work
