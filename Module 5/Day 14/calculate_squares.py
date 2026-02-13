@@ -1,17 +1,23 @@
-print("Calculate square for the following range")
+print("Calculate squares for the following ranges:")
 
-for num in range(5): # range excludes the stop, so will end at 4. Start is 0 by default, Step is 1.
-    print(f"Interation: {num} has a square of {num ** 2}") # ** is our exponent operator
+# range can be used with just range(end). End is exclusive. start defaults to 0.
+for num in range(5):
+    print(f"Iteration: {num} has a square of {num ** 2}") # ** is exponent; often ^ in other languages
 
-# range can take a start: range(start, end). start is inclusive, end is exclusive
-print("Starting at 2 to 5")
-for num in range(2, 6): # this should print 2 - 5
-    print(f"Interation: {num} has a square of {num ** 2}")
+# range can have a defined start as range(start, end). End is exclusive, start is inclusive
+for num in range(2, 6):
+    print(f"Iteration: {num} has a square of {num ** 2}") # ** is exponent; often ^ in other languages
 
-# range can take a step value: range(start, end, step). step will increase each iteration by itself
-print("Stepping by 2")
-for num in range(2, 6, 2): # this should print 2 and 4
-    print(f"Interation: {num} has a square of {num ** 2}")
+# range can also take a step (the amount it counts by)
+# range(start, end, step). end is exclusive, start is inclusive, count by step.
+print("Calculate squares for the following ranges:")
 
-# if you're ever unsure of what will be in your range, you can convert to a list and print it.
-print(list(range(2, 6, 2)))
+# range can be used with just range(end). End is exclusive. start defaults to 0.
+for num in range(2, 6, 2):
+    print(f"Iteration: {num} has a square of {num ** 2}") # ** is exponent; often ^ in other languages
+
+# we can print our range by casting to a list
+print(list(range(2, 7, 2)))
+
+# this does not print anything useful
+print(range(2, 7, 2))
