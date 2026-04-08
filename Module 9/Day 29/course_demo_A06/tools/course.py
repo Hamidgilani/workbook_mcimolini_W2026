@@ -38,3 +38,8 @@ class Course:
                 num_submissions += 1
         
         return total / num_submissions
+
+# You can write test code here
+
+course = Course("Stuff") 
+print(course)
